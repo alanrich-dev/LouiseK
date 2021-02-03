@@ -27,7 +27,7 @@ body{
 		"m0 m0 m0 m0 m0 ma ma mb mb mb mb mb"
 		"n0 n0 n0 na na na na na na nb nb nb"
 		"f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0";
-  grid-template-rows:10vh 44vh 12vh 34vh
+  grid-template-rows:10vh 48vh 12vh 40vh
 }
 html, body {
   margin: 0;
@@ -39,6 +39,16 @@ html, body {
 header{
 	grid-area:h0;
 	background:#39FF14;
+  display:;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+}
+header div{
+  margin-top:0;
+  font-size:28px;
+  color: white;
+  margin-top:2.5vh;
 }
 main{
 	grid-column-start:1;
@@ -70,6 +80,7 @@ nav{
   align-items:flex-end;
   justify-content:center;
   z-index:2;
+
 }
 .semiCirclejr{
   grid-area:ma;
@@ -81,6 +92,7 @@ nav{
 footer{
 	grid-area:f0;
 	background: #39FF14;
+
 }
 footer img{
   height: 80%;
@@ -88,15 +100,23 @@ footer img{
   border-radius:3px;
 }
 .shows{
-  margin-top:16px;
+  margin-top:12px;
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items:center;
 }
 .iLike{
-  margin:20px auto 20px 20px;
-  font-size:2rem;
+  margin:8px auto 0 28px;
+  font-size:3.6rem;
+  letter-spacing:0.3rem;
+  color:white;
+  display:flex;
+  flex-direction:row;
+  align-items:;
+}
+.iLike img{
+  width:60px;
 }
 .button{
   color:white;
@@ -108,5 +128,6 @@ footer img{
 	display:inline-block;
   padding:1rem;
   border-radius:10px;
+  box-shadow: 0 6px 12px rgba(134,140,150,0.65);
 }
 }
