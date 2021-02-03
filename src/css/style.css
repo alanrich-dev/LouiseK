@@ -9,7 +9,7 @@
 	padding:0;
 }
 html {
-  height: 100%;
+  height: 101%;
   width: 100%;
   font-size:16px;
 	background:;
@@ -27,28 +27,26 @@ body{
 		"m0 m0 m0 m0 m0 ma ma mb mb mb mb mb"
 		"n0 n0 n0 na na na na na na nb nb nb"
 		"f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0";
-  grid-template-rows:10vh 58vh 12vh 50vh
+  grid-template-rows:10vh 58vh 12vh 60vh
 }
 html, body {
   margin: 0;
   padding: 0;
 }
-/*-----------------------------------------------------------------------------*/
-/*---------------------------Desktop Styles----------------------------*/
+/*----------------------------Desktop Styles----------------------------------*/
 @media screen and (min-width:768px){
 header{
 	grid-area:h0;
 	background:#39FF14;
-  display:;
   flex-direction:row;
   justify-content:flex-start;
   align-items:center;
 }
 header div{
-  margin-top:0;
-  font-size:28px;
+  font-size:4.2vh;
   color: white;
   margin-top:2.5vh;
+  margin-left: 1.5vw;
 }
 main{
 	grid-column-start:1;
@@ -69,25 +67,25 @@ nav{
   flex-direction:row;
   align-items:center;
   justify-content:space-evenly;
+  padding-right:2.6vw;
 }
 .semiCircle{
 	grid-area:ma;
 	height:20vw;
 	width:40vw;
 	background:#39FF14;
-	border-radius: 150px 150px 0 0;
+	border-radius: 20vw 20vw 0 0;
   display:flex;
   align-items:flex-end;
   justify-content:center;
   z-index:2;
-
 }
 .semiCirclejr{
   grid-area:ma;
-  height:13vh;
-  width: 20vw;
+  height:8.5vw;
+  width: 17vw;
   background:#fef200;
-  border-radius:150px 150px 0 0;
+  border-radius:10vw 10vw 0 0;
 }
 footer{
 	grid-area:f0;
@@ -123,7 +121,7 @@ footer img{
 	background:#f41971;
 	border-radius:10px;
 	max-width:144px;
-	height:3rem;
+	height:8vh;
 	display:inline-block;
   padding:1rem;
   border-radius:10px;
