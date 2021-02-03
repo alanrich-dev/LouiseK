@@ -27,7 +27,7 @@ body{
 		"m0 m0 m0 m0 m0 ma ma mb mb mb mb mb"
 		"n0 n0 n0 na na na na na na nb nb nb"
 		"f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0";
-  grid-template-rows:10vh 48vh 12vh 40vh
+  grid-template-rows:10vh 58vh 12vh 50vh
 }
 html, body {
   margin: 0;
@@ -72,7 +72,7 @@ nav{
 }
 .semiCircle{
 	grid-area:ma;
-	height:26vh;
+	height:20vw;
 	width:40vw;
 	background:#39FF14;
 	border-radius: 150px 150px 0 0;
@@ -92,7 +92,6 @@ nav{
 footer{
 	grid-area:f0;
 	background: #39FF14;
-
 }
 footer img{
   height: 80%;
@@ -107,7 +106,7 @@ footer img{
   align-items:center;
 }
 .iLike{
-  margin:8px auto 0 28px;
+  margin:1.3rem auto 0 28px;
   font-size:3.6rem;
   letter-spacing:0.3rem;
   color:white;

@@ -1,0 +1,48 @@
+#bubbles img{
+	height:100%;
+	width:100%;
+	border-radius:50%;
+}
+.social {
+	position: absolute;
+	font-size: 36px;
+	color: white;
+	width: 100px;
+	height: 100px;
+	border: ;
+	border-radius: 50%;
+	text-align: center;
+	padding:;
+	transition: all 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transform-origin: 50% 50%;
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index:2;
+}
+#luluPic {
+	animation-name: twitter;
+  animation-duration: 950ms;
+  animation-timing-function: ease-in-out;;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;;
+  animation-direction: alternate;
+}
+@keyframes twitter {
+  0% {transform: translate(-40vw, -24vh);}
+	100% {transform: translate(-40vw, -26.0vh);}
+}
+#linkedin {
+	animation-name: linkedin;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes linkedin {
+	0% {transform: translate(40vw, -14.7vh);}
+	100% {transform: translate(40vw, -16.7vh);}
+}
