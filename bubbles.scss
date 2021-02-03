@@ -1,0 +1,62 @@
+$htmlCols: gold, orange, tomato, lightpink, hotpink, violet, rebeccapurple, deepskyblue, aquamarine, lightgreen, lawngreen, lightseagreen, teal, darkturquoise;
+
+$canvasH: 16;
+$bubbleDia: 5; 
+//NOTE: if bigger, param for translateY needs to be adjusted too
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #1ae8cf;
+}
+#bubbleCanvas {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: $canvasH + rem;
+  background: #1ae8cf;
+  background: #1ae8cf;
+  border-bottom: 1px solid rgba(40,4,93,1);
+  .bubbles {
+    position: absolute;
+    top: $canvasH + 3 + rem;
+    width: $bubbleDia + px;
+    height: $bubbleDia + px;
+    margin-left: -$bubbleDia + px;
+    background: transparent;
+    opacity: 0.8;
+    border-radius: 50%;
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) { 
+        box-shadow: 
+          random(100) + vw (random(10) * -1)+px 0 2 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(20) * -1)+px 0 3 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(30) * -1)+px 0 1 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(5) * -1)+px 0 5 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(18) * -1)+px 0 6 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(30) * -1)+px 0 3 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(12) * -1)+px 0 5 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(30) * -1)+px 0 5 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(40) * -1)+px 0 2 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(10) * -1)+px 0 5 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(20) * -1)+px 0 2 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(4) * -1)+px 0 5 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(20) * -1)+px 0 2 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(30) * -1)+px 0 1 + px #{nth($htmlCols, random(length($htmlCols)))},
+          random(100) + vw (random(4) * -1)+px 0 6 + px #{nth($htmlCols, random(length($htmlCols)))};
+          animation: bubbleUp (random(20) + 10) + s linear random(10) + s infinite;
+      }
+    }//end for
+  }//end bubbles
+}
+
+@keyframes bubbleUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-($canvasH + 4) + rem);
+    }
+}

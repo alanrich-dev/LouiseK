@@ -1,217 +1,112 @@
-* { 
-	box-sizing: border-box; 
+:root {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+	margin:0;
+	padding:0;
 }
 html {
-	font-family: Inter, sans-serif;
-	background: #232323;
-	height:100vh ; /*do I need to define as 100% if body height is defined as 100vh??*/ 
-	box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-size:16px;
+	background:;
+	font-family: 'Inter', sans-serif;
+	font-weight:900;
 }
-.bodyWrapper { 
-	margin: auto; 
-	height:100vh;
-	max-width: 100vw;
+body{
+	min-height: 100vh;
+  min-width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
 	display: grid;
 	grid-template-areas:
-	   				"n" 
-					"c"
-					"f";
-	grid-template-rows: minmax();
+		"h0 h0 h0 h0 h0 h0 h0 h0 h0 h0 h0 h0"
+		"m0 m0 m0 m0 m0 ma ma mb mb mb mb mb"
+		"n0 n0 n0 na na na na na na nb nb nb"
+		"f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 f0";
+  grid-template-rows:10vh 44vh 12vh 34vh
 }
-/*----------------Tablet + Desktop Styles-----------------*/
-@media (min-width: 480px) {
-   .bodyWrapper { 
-		margin: auto; 
-		height:100vh;
-		max-width: 100vw;
-		display: grid;
-		grid-template-areas:
-	   				"n n n n" /*default places all content in first column*/
-					"c c c c"
-					"f f f f";
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: minmax();
-	}	
+html, body {
+  margin: 0;
+  padding: 0;
 }
-header {
-	margin: 3rem;
-	display: grid;
-	grid-template-columns: 0 max-content 5rem auto;
-	grid-template-rows: 1.5rem 50px min-content auto auto;
-	gap: 0 1rem;
-	grid-area: n;
+/*-----------------------------------------------------------------------------*/
+/*---------------------------Desktop Styles----------------------------*/
+@media screen and (min-width:768px){
+header{
+	grid-area:h0;
+	background:#39FF14;
 }
-h1 {
-	grid-column: 1 / 3;
-	grid-row: 1 / 5;
-	margin: 0;
-	font-size: 2.5rem;
-	color: whitesmoke;
-	border:0.5rem solid #b833e1;
-	text-transform: uppercase;	
-	text-align: center;
-	border-radius: 5px;
+main{
+	grid-column-start:1;
+	grid-column-end:13;
+	grid-row:2;
+	background: #1ae8cf;
+  display:flex;
+  flex-direction:row;
+  align-items:flex-end;
+  justify-content:center;
 }
-@media (min-width: 480px) {
-	nav {
-		writing-mode: vertical-rl;
-		grid-column: 3 / 5;
-		grid-row: 3;
-		background: #0556cb;
-		border-radius:5px;
-		height:20vh; /*this will need attn*/
-	}
+nav{
+	grid-column-start:1;
+	grid-column-end:13;
+	grid-row:3;
+	background:#fef200;
+  display:inline-flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-evenly;
 }
-ul {
-	padding: 1rem;
+.semiCircle{
+	grid-area:ma;
+	height:26vh;
+	width:40vw;
+	background:#39FF14;
+	border-radius: 150px 150px 0 0;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  z-index:2;
 }
-li {
-	list-style: none;
+.semiCirclejr{
+  grid-area:ma;
+  height:13vh;
+  width: 20vw;
+  background:#fef200;
+  border-radius:150px 150px 0 0;
 }
 footer{
-	grid-area:f;
-	margin:5rem;
+	grid-area:f0;
+	background: #39FF14;
 }
-.aboutMe{
-	background:#0556cb;
-	border-radius:5px;
-	height:25vh;
-	grid-area: f;
+footer img{
+  height: 80%;
+  width: 260px;
+  border-radius:3px;
 }
-#aboutMePic {
-	border-radius: 50%;
-	max-width:100%;
-	max-height:100%;
-	height:100%;
-	width:auto;
-	grid-area:f;
+.shows{
+  margin-top:16px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
 }
-/* Inner Grid */
-.headerText {
-	font:white;
+.iLike{
+  margin:20px auto 20px 20px;
+  font-size:2rem;
 }
-h1 {
-	display: grid;
-	grid-template-columns: repeat(8, 1fr);
+.button{
+  color:white;
+	grid-area:na;
+	background:#f41971;
+	border-radius:10px;
+	max-width:144px;
+	height:3rem;
+	display:inline-block;
+  padding:1rem;
+  border-radius:10px;
 }
-h1 span:nth-child(1) { /* L */
-	grid-column: 2;
-	grid-row: 1;
-}
-h1 span:nth-child(2) { /* O */
-	grid-column: 3;
-	grid-row: 1;
-}
-h1 span:nth-child(3) { /* U */
-	grid-column: 6;
-	grid-row: 1;
-}
-h1 span:nth-child(4) { /* I */
-	grid-column: 3;
-	grid-row: 2;
-}
-h1 span:nth-child(5) { /* S */
-	grid-column: 4;
-	grid-row: 2;
-}
-h1 span:nth-child(6) { /* E */
-	grid-column: 5;
-	grid-row: 3;
-}
-h1 span:nth-child(7) { /* K */
-	grid-column: 6;
-	grid-row: 3;
-}
-h1 span:nth-child(8) { /* E */
-	grid-column: 1;
-	grid-row: 4;
-}
-h1 span:nth-child(9) { /* R */
-	grid-column: 2;
-	grid-row: 4;
-}
-h1 span:nth-child(10) { /* R */
-	grid-column: 5;
-	grid-row: 5;
-}
-h1 span:nth-child(11) { /* A */
-	grid-column: 3;
-	grid-row: 6;
-}
-h1 span:nth-child(12) { /* D */
-	grid-column: 5;
-	grid-row: 6;
-}
-
-/*Carousel*/
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-.carousel {
-    position: relative;
-	width: 80%;
-	max-width: 100%;
-    height:50vh;
-    margin: auto;
-	grid-area: c;
-	background: #0556cb;
-	border-radius: 5px;
-}
-.carousel-content {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-	height: 100%;
-}
-.slide {
-    height: 100%;
-    position: absolute;
-	transition: left .4s cubic-bezier(.47,.13,.15,.89);;
-	white-space: nowrap;
-	text-align: center;
-	padding: 0.5rem;
-}
-.slide > img {
-    background:inherit;
-    max-width:100%;
-	max-height:100%;
-	vertical-align: middle;
-	padding: 0.3rem;
-	background:rgb(24, 26, 27);
-	border-radius: 5px;
-}
-.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-.scroll {
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-    background-color: rgba(150,150,150,.3);
-    width: 20px;
-    height: 20px;
-    z-index: 2;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    color: white;
-    -webkit-user-select: none;
-}
-.scroll-left {
-    left: -25px;
-}
-.scroll-right {
-    right: -25px;
-}
-.carousel-arrow-icon-left {
-    margin-left: 5px;
-    margin-top: 2px;
-}
-.carousel-arrow-icon-right {
-    margin-left: 7px;
-    margin-top: 2px;
 }

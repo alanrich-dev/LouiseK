@@ -1,0 +1,81 @@
+#bubbleCanvas {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background: #1ae8cf;
+  grid-column-start:1;
+	grid-column-end:13;
+  grid-row:2;
+  z-index:1;
+  margin-top:;/*to push down border of sass element*/
+}
+#bubbleCanvas .bubbles {
+  position: absolute;
+  top: 110%;
+  width: 5px;
+  height: 5px;
+  margin-left: -5px;
+  background: transparent;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+#bubbleCanvas .bubbles:nth-child(1) {
+  box-shadow: 30vw -2px 0 2px lightpink, 11vw -16px 0 3px deepskyblue, 92vw -30px 0 1px lightgreen, 89vw -3px 0 5px lightpink, 3vw -12px 0 6px lawngreen, 91vw -21px 0 3px lawngreen, 13vw -10px 0 5px hotpink, 67vw -15px 0 5px tomato, 40vw -20px 0 2px lawngreen, 15vw -10px 0 5px lightpink, 3vw -1px 0 2px lightseagreen, 90vw -1px 0 5px lightpink, 53vw -10px 0 2px lightseagreen, 76vw -18px 0 1px darkturquoise, 37vw -1px 0 6px lightseagreen;
+  animation: bubbleUp 22s linear 9s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(2) {
+  box-shadow: 43vw -5px 0 2px violet, 20vw -15px 0 3px lightgreen, 42vw -18px 0 1px lawngreen, 51vw -1px 0 5px rebeccapurple, 30vw -6px 0 6px gold, 4vw -15px 0 3px lightseagreen, 4vw -2px 0 5px lightgreen, 35vw -16px 0 5px tomato, 92vw -3px 0 2px violet, 77vw -9px 0 5px lightgreen, 1vw -8px 0 2px violet, 67vw -2px 0 5px violet, 97vw -5px 0 2px lawngreen, 99vw -20px 0 1px violet, 37vw -3px 0 6px lightseagreen;
+  animation: bubbleUp 30s linear 6s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(3) {
+  box-shadow: 8vw -3px 0 2px lightgreen, 83vw -5px 0 3px deepskyblue, 83vw -4px 0 1px teal, 67vw -4px 0 5px tomato, 98vw -18px 0 6px rebeccapurple, 29vw -28px 0 3px hotpink, 42vw -3px 0 5px tomato, 93vw -4px 0 5px lightgreen, 100vw -4px 0 2px hotpink, 15vw -7px 0 5px deepskyblue, 47vw -3px 0 2px teal, 87vw -2px 0 5px aquamarine, 75vw -19px 0 2px teal, 97vw -5px 0 1px gold, 95vw -3px 0 6px lawngreen;
+  animation: bubbleUp 12s linear 6s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(4) {
+  box-shadow: 34vw -6px 0 2px lightgreen, 18vw -15px 0 3px aquamarine, 74vw -18px 0 1px deepskyblue, 93vw -5px 0 5px violet, 99vw -8px 0 6px orange, 21vw -22px 0 3px lightgreen, 99vw -7px 0 5px violet, 57vw -11px 0 5px teal, 71vw -21px 0 2px aquamarine, 89vw -5px 0 5px lightpink, 73vw -10px 0 2px rebeccapurple, 27vw -2px 0 5px orange, 65vw -20px 0 2px lightgreen, 98vw -21px 0 1px hotpink, 73vw -3px 0 6px tomato;
+  animation: bubbleUp 25s linear 2s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(5) {
+  box-shadow: 31vw -10px 0 2px aquamarine, 69vw -8px 0 3px lightseagreen, 4vw -30px 0 1px tomato, 68vw -4px 0 5px rebeccapurple, 47vw -7px 0 6px violet, 38vw -18px 0 3px gold, 4vw -10px 0 5px hotpink, 40vw -4px 0 5px tomato, 77vw -2px 0 2px violet, 50vw -8px 0 5px lightpink, 78vw -20px 0 2px teal, 40vw -2px 0 5px deepskyblue, 29vw -19px 0 2px lawngreen, 34vw -13px 0 1px deepskyblue, 86vw -2px 0 6px gold;
+  animation: bubbleUp 13s linear 8s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(6) {
+  box-shadow: 55vw -2px 0 2px lightseagreen, 55vw -2px 0 3px lightseagreen, 65vw -17px 0 1px darkturquoise, 50vw -3px 0 5px orange, 94vw -4px 0 6px darkturquoise, 44vw -1px 0 3px deepskyblue, 1vw -11px 0 5px teal, 83vw -26px 0 5px deepskyblue, 38vw -26px 0 2px tomato, 14vw -4px 0 5px lightpink, 65vw -8px 0 2px deepskyblue, 46vw -2px 0 5px darkturquoise, 57vw -8px 0 2px lightseagreen, 30vw -12px 0 1px hotpink, 60vw -3px 0 6px orange;
+  animation: bubbleUp 24s linear 3s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(7) {
+  box-shadow: 56vw -10px 0 2px lightseagreen, 64vw -14px 0 3px rebeccapurple, 59vw -18px 0 1px lawngreen, 50vw -2px 0 5px lightgreen, 16vw -2px 0 6px hotpink, 82vw -8px 0 3px lightpink, 80vw -9px 0 5px aquamarine, 80vw -26px 0 5px violet, 76vw -18px 0 2px rebeccapurple, 1vw -3px 0 5px deepskyblue, 89vw -19px 0 2px orange, 97vw -1px 0 5px lightgreen, 8vw -13px 0 2px lightseagreen, 29vw -15px 0 1px gold, 28vw -2px 0 6px hotpink;
+  animation: bubbleUp 11s linear 9s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(8) {
+  box-shadow: 73vw -8px 0 2px aquamarine, 53vw -20px 0 3px hotpink, 12vw -12px 0 1px hotpink, 28vw -3px 0 5px gold, 88vw -18px 0 6px tomato, 49vw -29px 0 3px violet, 81vw -12px 0 5px violet, 39vw -21px 0 5px tomato, 31vw -24px 0 2px aquamarine, 77vw -7px 0 5px aquamarine, 98vw -11px 0 2px deepskyblue, 14vw -1px 0 5px hotpink, 79vw -2px 0 2px orange, 79vw -4px 0 1px hotpink, 70vw -4px 0 6px teal;
+  animation: bubbleUp 11s linear 7s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(9) {
+  box-shadow: 51vw -3px 0 2px deepskyblue, 79vw -17px 0 3px tomato, 54vw -6px 0 1px lawngreen, 38vw -5px 0 5px lightseagreen, 18vw -13px 0 6px tomato, 25vw -9px 0 3px rebeccapurple, 91vw -12px 0 5px lightpink, 37vw -11px 0 5px lawngreen, 76vw -33px 0 2px orange, 4vw -3px 0 5px darkturquoise, 90vw -9px 0 2px gold, 92vw -1px 0 5px lightseagreen, 81vw -7px 0 2px rebeccapurple, 55vw -12px 0 1px violet, 99vw -4px 0 6px hotpink;
+  animation: bubbleUp 30s linear 9s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(10) {
+  box-shadow: 57vw -7px 0 2px lightgreen, 75vw -2px 0 3px darkturquoise, 52vw -18px 0 1px hotpink, 70vw -4px 0 5px gold, 4vw -15px 0 6px teal, 46vw -5px 0 3px teal, 18vw -12px 0 5px rebeccapurple, 73vw -22px 0 5px lightgreen, 64vw -20px 0 2px darkturquoise, 74vw -4px 0 5px rebeccapurple, 74vw -2px 0 2px hotpink, 6vw -2px 0 5px teal, 74vw -16px 0 2px lightseagreen, 46vw -19px 0 1px gold, 71vw -2px 0 6px deepskyblue;
+  animation: bubbleUp 11s linear 5s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(11) {
+  box-shadow: 95vw -1px 0 2px rebeccapurple, 58vw -14px 0 3px rebeccapurple, 49vw -28px 0 1px aquamarine, 59vw -3px 0 5px darkturquoise, 51vw -8px 0 6px lightpink, 84vw -17px 0 3px darkturquoise, 81vw -11px 0 5px aquamarine, 54vw -14px 0 5px lawngreen, 57vw -12px 0 2px aquamarine, 82vw -7px 0 5px lightpink, 80vw -14px 0 2px lightpink, 42vw -3px 0 5px lightgreen, 12vw -11px 0 2px darkturquoise, 41vw -14px 0 1px rebeccapurple, 80vw -4px 0 6px violet;
+  animation: bubbleUp 15s linear 10s infinite;
+}
+#bubbleCanvas .bubbles:nth-child(12) {
+  box-shadow: 94vw -1px 0 2px hotpink, 57vw -6px 0 3px gold, 30vw -23px 0 1px rebeccapurple, 77vw -4px 0 5px lightpink, 12vw -1px 0 6px rebeccapurple, 96vw -1px 0 3px tomato, 93vw -3px 0 5px gold, 90vw -27px 0 5px darkturquoise, 10vw -21px 0 2px teal, 60vw -8px 0 5px lightpink, 7vw -11px 0 2px teal, 47vw -4px 0 5px lightgreen, 50vw -13px 0 2px aquamarine, 83vw -26px 0 1px darkturquoise, 11vw -4px 0 6px lightgreen;
+  animation: bubbleUp 30s linear 9s infinite;
+}
+
+@keyframes bubbleUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-24.5rem);
+  }
+}
+
+/*# sourceMappingURL=bubbles.css.map */
