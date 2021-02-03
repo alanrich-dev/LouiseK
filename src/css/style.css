@@ -97,23 +97,11 @@ footer img{
   border-radius:3px;
 }
 .shows{
-  margin-top:12px;
+  margin-top:8vh;
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items:center;
-}
-.iLike{
-  margin:1.3rem auto 0 28px;
-  font-size:3.6rem;
-  letter-spacing:0.3rem;
-  color:white;
-  display:flex;
-  flex-direction:row;
-  align-items:;
-}
-.iLike img{
-  width:60px;
 }
 .button{
   color:white;
