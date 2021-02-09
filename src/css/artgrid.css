@@ -30,22 +30,16 @@
   grid-template-areas:
   'f f'
   'f f'
-  'b e'
   'a a'
   'a a'
-  'g o'
   'd d'
   'd d'
-  'k p'
   'm m'
   'm m'
-  'c j'
   'h h'
   'h h'
-  'i l'
   'u u'
-  'u u'
-  'r n';
+  'u u';
   grid-template-rows: repeat(19, 25vh);
   grid-template-columns: repeat(2, 50vw);
  }
