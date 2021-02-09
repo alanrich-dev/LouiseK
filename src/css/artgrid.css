@@ -1,5 +1,5 @@
 
-@media screen and (min-width:600px){
+@media screen and (min-width:700px){
 .grid{
   height:100%;
   width:100%;
@@ -22,7 +22,7 @@
    font-size:2rem;
  }
 }
-@media screen and (max-width:599px){
+@media screen and (max-width:699px){
 .grid{
   height:100%;
   width:100%;
@@ -36,7 +36,6 @@
   'g o'
   'd d'
   'd d'
-  'q q'
   'k p'
   'm m'
   'm m'
@@ -49,7 +48,17 @@
   'r n';
   grid-template-rows: repeat(19, 25vh);
   grid-template-columns: repeat(2, 50vw);
-}
+ }
+ .f h1 {
+ 	display: grid;
+  justify-content:center;
+  align-items:center;
+ 	grid-template-columns: repeat(6, 3.2rem);
+  grid-template-rows:;
+  font-size:2.4rem;
+  margin-left:3vw;
+  padding:1rem;
+ }
 }
 
 .topBlob{
@@ -91,15 +100,6 @@
   width:100%;
   opacity:100%;
   color:whitesmoke;
-}
-.f h1 {
-	display: grid;
-  justify-content:center;
-  align-items:center;
-	grid-template-columns: repeat(6, 3.2rem);
-  grid-template-rows:;
-  font-size:3rem;
-  margin-left:3vw;
 }
 .f h1 span:nth-child(1) { /* L */
 	grid-column: 1;
