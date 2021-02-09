@@ -1,5 +1,5 @@
 #bubbles span{
-	
+
 }
 #bubbles img{
 	height:100%;
@@ -26,26 +26,26 @@
   z-index:2;
 }
 #luluPic {
-	animation-name: twitter;
+	animation-name: lulu;
   animation-duration: 950ms;
   animation-timing-function: ease-in-out;;
   animation-delay: 0s;
   animation-iteration-count: infinite;;
   animation-direction: alternate;
 }
-@keyframes twitter {
-  0% {transform: translate(-40vw, -24vh);}
-	100% {transform: translate(-40vw, -26.0vh);}
+@keyframes lulu {
+  0% {transform: translate(-30vw, -24vh);}
+	100% {transform: translate(-30vw, -26.0vh);}
 }
-#linkedin {
-	animation-name: linkedin;
+#draco {
+	animation-name: draco;
   animation-duration: 900ms;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-@keyframes linkedin {
-	0% {transform: translate(40vw, -14.7vh);}
-	100% {transform: translate(40vw, -16.7vh);}
+@keyframes draco {
+	0% {transform: translate(30vw, -14.7vh);}
+	100% {transform: translate(30vw, -16.7vh);}
 }
