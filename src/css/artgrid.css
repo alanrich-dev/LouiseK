@@ -7,12 +7,7 @@
   "a a f f j m m"
   "b c f f k m m"
   "d d g h h n p"
-  "d d i h h o u"
-/*
-  "y y y y y y y"
-  "y y y y y y y";
-*/
-  /*grid-template-rows: repeat(7, 14.286vh);*/
+  "d d i h h o u";
   grid-template-rows: repeat(5, 22vh);
   grid-template-columns: repeat(7, 14.286vw);
 }
@@ -23,7 +18,7 @@
   display:flex;
   flex-direction:row;
   align-items:center;
-  justify-content:;
+  justify-content:center;
   height:100%;
   width:100%;
   border: solid 4px #e9e9e7;
@@ -61,18 +56,17 @@
   width:100%;
   opacity:100%;
   color:whitesmoke;
-}
+  display:flex
 
+
+}
 .f h1 {
 	display: grid;
-  grid-gap:;
-	grid-template-columns: repeat(6, 3.6vw);
-  height:100%;
-  width:100%;
-  padding:;
-  font-size:4vw;
-  margin:0 0 0 4vw;
-
+  justify-content:center;
+  align-items:center;
+	grid-template-columns: repeat(6, 1.6rem);
+  grid-template-rows:;
+  font-size:2rem;
 }
 .f h1 span:nth-child(1) { /* L */
 	grid-column: 1;
