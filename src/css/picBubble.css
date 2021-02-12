@@ -1,21 +1,16 @@
-#bubbles span{
 
-}
-#bubbles img{
-	height:100%;
-	width:100%;
-	border-radius:50%;
+.bubbles image{
+	border-radius:;
+	height:50%;
 }
 .social {
 	position: absolute;
-	font-size: 36px;
 	color: white;
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	border: ;
 	border-radius: 50%;
 	text-align: center;
-	padding:;
 	transition: all 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	transform-origin: 50% 50%;
 	top: 0;
@@ -46,6 +41,6 @@
   animation-direction: alternate;
 }
 @keyframes draco {
-	0% {transform: translate(30vw, -14.7vh);}
-	100% {transform: translate(30vw, -16.7vh);}
+	0% {transform: translate(35vw, -14.7vh);}
+	100% {transform: translate(35vw, -16.7vh);}
 }
