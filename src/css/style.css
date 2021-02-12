@@ -1,3 +1,16 @@
+@media screen and (min-width:1px) and (max-width:599px){
+  footer{
+    grid-area:f0;
+    background:#443695;
+    display:flex;
+    flex-direction:column;
+  }
+  footer h2{
+    margin:2rem auto 1rem;
+    font-size:1.8rem;
+    color:white;
+  }
+}
 @media screen and (min-width:600px){
   .index{
     min-height: 100vh;
@@ -34,10 +47,15 @@
   footer{
   	grid-area:f0;
     background:#443695;
+    display:flex;
+    flex-direction:column;
+  }
+  footer h2{
+    margin:2rem auto 1rem;
+    font-size:2rem;
+    color:white;
   }
   footer img{
-    height: 80%;
-    width: 25vw;
     border-radius:3px;
   }
 }
@@ -172,12 +190,13 @@ footer{
   background:#443695;
 }
 footer img{
-  height: 30vh;
-  width: 88vw;
+  height:;
+  width:60vw;
+  margin:auto;
   border-radius:5px;
 }
 .shows{
-  margin-top:4vh;
+  margin-top:1rem;
   display:flex;
   flex-direction:column;
   justify-content:center;
