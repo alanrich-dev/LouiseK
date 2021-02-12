@@ -23,7 +23,7 @@
       "m0 m0 m0 m0 m0 ma ma mb mb mb mb mb"
       "n0 n0 n0 na na na na na na nb nb nb"
       ". f0 f0 f0 f0 f0 f0 f0 f0 f0 f0 .";
-    grid-template-rows:10vh 66vh 14vh 60vh
+    grid-template-rows:10vh 66vh 14vh 60vh;
   }
   .semiCircle{
   	grid-area:ma;
