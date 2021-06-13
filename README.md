@@ -9,8 +9,7 @@ View the rest of my [portfolio][1]
 > - Media Queries
 
 > ## Challenges
-> No real challenges with this project. I just played around with CSS, read the documentation and eventually I had a webpage that was presentable. I used two pages as wireframes, the Public Broadcasting Children's webpage and Pharell Williams old webpage
-and just used CSS grid to build similar looking pages.
+> Need to update now that the site was rebuilt. This was the first webpage I ever built. I recently updated it with sass in accordance with acceptable design standards.
 
 ### Want to know more [about me][3] or See my other [work][1]?
 ### Or shoot me an [email][4] to say hi.  
