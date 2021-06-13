@@ -1,78 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Louise Kerrad</title>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/src/css/bubbles.css">
-	<link rel="stylesheet" href="/src/css/style.css">
-	<link rel="stylesheet" href="/src/css/picBubble.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louise Kerrad's Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/243b648db7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+<body>
+    <header class="indexHeader">
+        <input type="checkbox">
+        <div class="toggle"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about">About</a></li>
+                <span class="logo" id="#home">Louise</span>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content wrapper">
+            <div class="circular">
+                <img src="./assets/circle-text.png" alt="picture with text saying it's all about">
+                <h1>Louise</h1>
+            </div>
+            <div>
+                <img src="./assets/home-image-1.jpg" alt="a person holding two orange slices in front of her eyes">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="textContainer wrapper">
+                <h2>qui est Louise?</h2>
+								<p>Je suis une fillette de dix ans vivant la belle vie a Toulose. Je vais a l'ecole, je fais du sport et je passe le reste de mon temps avec mes amis et mon chat.</p>
+								<button class="find"><a href="">en savoir plus</a></button>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="things flexContainer">
+                <div class="side red"></div>
+                <div class="wrapper flexContainer">
+                    <div class="bgContainer"></div>
+                    <div class="textContainer">
+                        <h3>Louise's Choses Favorites</h3>
+												<p>J'aime jouer au handball. J'aime jouer a Nintendo Switch. J'aime lire des mangas. Mais surtout j'aime passer du temps avec mes amis.</p>
+                        <button class="read"><a href="">en savoir plus</a></button>
+                    </div>
+                </div>
+                <div class="side white"></div>
+            </div>
+            <div class="travelled flexContainer">
+                <div class="side white"></div>
+                <div class="wrapper flexContainer">
+                    <div class="bgContainer"></div>
+                    <div class="textContainer">
+                        <h3>Ou j'ai vecu</h3>
+												<p>J'ai vecu en Suede et en France, specifiquement les villes Malmo, Caen et maintenant Toulouse. J'aime visiter de noveaux endroits.</p>
+												<button class="read"><a href="">en savoir plus</a></button>
+                    </div>
+                </div>
+                <div class="side yellow"></div>
+            </div>
 
-<body class="index">
-	<header>
-		<h2 class="title">LOUISE KERRAD</h2>
-	</header>
-	<main>
-		<div class='semiCircle'>
-			<div class='semiCirclejr'></div>
-		</div>
-<!--
-		<div id='bubbles'>
-    	<a href="" target="_blank">
-				<div id="luluPic" class="social">
-					<img src="/src/media/lulu.jpg" alt="">
-				</div>
-			</a>
-		</div>
--->
-	<div class='bubbles'>
-			<svg id='luluPic' class='blob social 'viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-				<path fill="#A64AC9" d="M48.3,-74.8C63.2,-65.6,76.2,-53.2,83.9,-37.9C91.6,-22.6,94,-4.4,91.5,13.2C89.1,30.8,81.8,47.7,70.1,60.1C58.3,72.6,42.2,80.6,25.3,85.2C8.3,89.8,-9.4,90.9,-24.7,85.7C-40.1,80.5,-53.1,68.9,-65.1,56C-77,43,-87.7,28.6,-91.5,12.2C-95.3,-4.1,-92.1,-22.3,-83.7,-37.2C-75.3,-52,-61.7,-63.5,-46.9,-72.8C-32.1,-82,-16.1,-89.1,0.3,-89.6C16.7,-90.1,33.4,-84,48.3,-74.8Z" transform="translate(100 100)" />
-				<image xlink:href="/src/media/lulu.jpg" width="64%" height="100%" x="36" y="45" id="luluBlob"/>
-			</svg>
-	</div>
+        </section>
+        <section class="info">
+            <div class="wrapper flexContainer">
+                <div class="card">
+                    <div class="textContainer">
+                        <div class="flexContainer">
+                            <i class="fas fa-image"></i>
+                            <h2>photos</h2>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit aut nemo unde voluptatem ipsum dolores culpa omnis adipisci. Magnam ducimus provident nemo odit consequuntur!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="textContainer">
+                        <div class="flexContainer">
+                            <i class="fas fa-user"></i>
+                            <h2>about</h2>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit aut nemo unde voluptatem ipsum dolores culpa omnis adipisci. Magnam ducimus provident nemo odit consequuntur!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="textContainer">
+                        <div class="flexContainer">
+                            <i class="fas fa-desktop"></i>
+                            <h2>blog</h2>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit aut nemo unde voluptatem ipsum dolores culpa omnis adipisci. Magnam ducimus provident nemo odit consequuntur!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="textContainer">
+                        <div class="flexContainer">
+                            <i class="fas fa-phone"></i>
+                            <h2>entrer en contact</h2>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit aut nemo unde voluptatem ipsum dolores culpa omnis adipisci. Magnam ducimus provident nemo odit consequuntur!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg"></div>
+        </section>
+        <section class="journey">
+            <div class="wrapper flexContainer">
+                <div class="imageContainer">
+                    <img src="./assets/home-image-5.jpg" alt="a person standing with a orange shirt">
+                    </div>
+                <div class="textContainer">
+                    <h2>le voyage de Louise</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et, aliquid eaque quibusdam dolor officia dignissimos voluptas minus earum maiores minima quasi maxime vel ducimus reprehenderit exercitationem eligendi nam, enim animi? Aperiam sunt vel temporibus qui, voluptatibus molestias, earum necessitatibus omnis tempore asperiores voluptate impedit soluta</p>
+                    <button class="find"><a href="">en savoir plus</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="wrapper flexContainer">
+                <div class="imageContainer">
+                    <a href="https://www.instagram.com/"><img src="./assets/home-image-6.jpg" alt="teal bicycle against a orange wall"></a>
+                </div>
+                <div class="imageContainer">
+                    <a href="https://www.instagram.com/"><img src="./assets/home-image-7.jpg" alt="a large orange building with a archway"></a>
+                </div>
+                <div class="imageContainer">
+                    <a href="https://www.instagram.com/"><img src="./assets/home-image-8.jpg" alt="a yellow sun umbrella with banana beach text on the brim"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &#169;2020 <a href="https://alanrich.dev">Alan Rich</a></p>
+    </footer>
 
-	<div class='bubbles'>
-			<svg id='draco' class='blob social 'viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-				<path fill="#A64AC9" d="M48.3,-74.8C63.2,-65.6,76.2,-53.2,83.9,-37.9C91.6,-22.6,94,-4.4,91.5,13.2C89.1,30.8,81.8,47.7,70.1,60.1C58.3,72.6,42.2,80.6,25.3,85.2C8.3,89.8,-9.4,90.9,-24.7,85.7C-40.1,80.5,-53.1,68.9,-65.1,56C-77,43,-87.7,28.6,-91.5,12.2C-95.3,-4.1,-92.1,-22.3,-83.7,-37.2C-75.3,-52,-61.7,-63.5,-46.9,-72.8C-32.1,-82,-16.1,-89.1,0.3,-89.6C16.7,-90.1,33.4,-84,48.3,-74.8Z" transform="translate(100 100)" />
-				<image xlink:href="/src/media/draco.jpg" width="64%" height="100%" x="36" y="50" id="luluBlob"/>
-			</svg>
-	</div>
-<!--
-		<div id='bubbles'>
-			<a href="" target="_blank">
-				<div id="draco" class="social">
-					<img src="/src/media/draco.jpg" alt="">
-				</div>
-			</a>
-		</div>
--->
-
-
-	</main>
-	<div id="bubbleCanvas">
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-		<div class="bubbles"></div>
-	</div>
-	<nav>
-		<a class='button' href="dessins.html"><span>mes<br>desssins</span></a>
-		<a class='button' href="ecrits.html"><span>mes<br>écrits</span></a>
-		<a class='button' href="chat.html"><span>mon<br>chat</span></a>
-	</nav>
-	<footer>
-	</footer>
-	<script src="scripts.js"></script>
 </body>
 </html>
